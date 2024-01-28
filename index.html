@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./src/js/tutorial.js"></script>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/tutorial.css" />
+  </head>
+  <body>
+    <div
+      draggable="true"
+      id="source"
+      ondragstart="onStartDrag(event);"
+      ondragend="onEndDrag(event);"
+    >
+      <strong>Element</strong>
+    </div>
+    <div class="pages">
+      <div
+        class="destination"
+        id="destination-1"
+        ondrop="onDrop(event);"
+        ondragover="onDragOver(event);"
+        ondragenter="onDragEnter(event);"
+        ondragleave="onDragLeave(event);"
+      >
+        <strong>Drop Zone</strong>
+      </div>
+      <div
+        class="destination"
+        id="destination-2"
+        ondrop="onDrop(event);"
+        ondragover="onDragOver(event);"
+        ondragenter="onDragEnter(event);"
+        ondragleave="onDragLeave(event);"
+      >
+        <strong>Drop Zone</strong>
+      </div>
+      <div
+        class="destination"
+        id="destination-3"
+        ondrop="onDrop(event);"
+        ondragover="onDragOver(event);"
+        ondragenter="onDragEnter(event);"
+        ondragleave="onDragLeave(event);"
+      >
+        <strong>Drop Zone</strong>
+      </div>
+    </div>
+  </body>
+</html>
